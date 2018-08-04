@@ -53,22 +53,12 @@ public class SwipeMainActivity extends Activity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
-  /*  @Override
-    protected void onListItemClick(ListView listView, View view, int position, long id){
-        Toast.makeText(
-                this,
-                "Clicked "+mAdapter.getItem(position),
-                Toast.LENGTH_SHORT
-        ).show();
-    }*/
 
     @Override
     public boolean hasActions(int position, SwipeDirection direction){
